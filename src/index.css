@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@theme {
+  --color-outline-variant: #bec9bf;
+  --color-on-secondary-container: #27714d;
+  --color-surface-variant: #d9e6dd;
+  --color-tertiary-container: #866600;
+  --color-on-primary: #ffffff;
+  --color-background: #f0fcf4;
+  --color-secondary-fixed: #a8f3c5;
+  --color-primary-fixed-dim: #7cd9a4;
+  --color-on-tertiary: #ffffff;
+  --color-on-primary-container: #a7ffc9;
+  --color-inverse-surface: #28332d;
+  --color-on-secondary-fixed: #002111;
+  --color-surface-dim: #d0ddd5;
+  --color-tertiary-fixed: #ffdf98;
+  --color-on-surface-variant: #3f4941;
+  --color-on-tertiary-fixed: #251a00;
+  --color-on-background: #131e19;
+  --color-secondary-fixed-dim: #8dd6ab;
+  --color-inverse-primary: #7cd9a4;
+  --color-secondary: #206b47;
+  --color-on-tertiary-fixed-variant: #5a4300;
+  --color-error: #ba1a1a;
+  --color-surface-tint: #006d43;
+  --color-on-secondary: #ffffff;
+  --color-tertiary-fixed-dim: #f0c044;
+  --color-tertiary: #684f00;
+  --color-secondary-container: #a8f3c5;
+  --color-surface-container: #e4f1e9;
+  --color-surface: #f0fcf4;
+  --color-on-primary-fixed-variant: #005231;
+  --color-primary-container: #0f7a4d;
+  --color-outline: #6f7a71;
+  --color-error-container: #ffdad6;
+  --color-on-secondary-fixed-variant: #005232;
+  --color-primary-fixed: #98f6be;
+  --color-surface-bright: #f0fcf4;
+  --color-inverse-on-surface: #e7f4eb;
+  --color-primary: #005f3a;
+  --color-on-tertiary-container: #ffeac0;
+  --color-surface-container-highest: #d9e6dd;
+  --color-surface-container-low: #eaf7ee;
+  --color-on-surface: #131e19;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+  --color-surface-container-high: #deebe3;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-primary-fixed: #002111;
+
+  --spacing-margin: 2rem;
+  --spacing-margin-mobile: 1rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-mobile: 0.75rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2rem;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0fcf4;
+    color: #131e19;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  /* Hide scrollbar for clean UI where specified */
+  .no-scrollbar::-webkit-scrollbar,
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar,
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Design System Typography Utilities */
+.font-display-lg {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+.font-display-lg-mobile {
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+.font-headline-xl {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+.font-headline-xl-mobile {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+.font-headline-lg {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+.font-headline-md {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+.font-headline-sm {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  font-weight: 600;
+}
+.font-body-lg {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  font-weight: 400;
+}
+.font-body-md {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  font-weight: 400;
+}
+.font-body-sm {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.005em;
+  font-weight: 400;
+}
+.font-label-lg {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  font-weight: 600;
+}
+.font-label-md {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+.font-label-sm {
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+

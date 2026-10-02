@@ -1,0 +1,7 @@
+{
+  "name": "HireFlow - Talent Exchange & Modern Recruiting Platform",
+  "description": "Enterprise talent exchange connecting top professionals with verified employers through transparent pipelines, automated compliance, and real-time candidate tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
